@@ -9,7 +9,6 @@
 //------------------------------------------------------------------------------
 
 var rule = require("../../../lib/rules/no-circular-dependencies"),
-
     RuleTester = require("eslint").RuleTester;
 
 
@@ -25,13 +24,11 @@ ruleTester.run("no-circular-dependencies", rule, {
         // give me some code that won't trigger a warning
     ],
 
-    invalid: [
-        {
-            code: "",
-            errors: [{
-                message: "Fill me in.",
-                type: "Me too"
-            }]
-        }
-    ]
+    invalid: [{
+        code: "",
+        errors: [{
+            message: "Fill me in.",
+            type: "Me too"
+        }]
+    }]
 });
