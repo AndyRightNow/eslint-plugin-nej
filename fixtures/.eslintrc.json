@@ -1,0 +1,23 @@
+{
+    "env": {
+        "commonjs": false,
+        "es6": false,
+        "node": false,
+        "browser": true
+    },
+    "globals": {
+        "NEJ": true,
+        "Regular": true
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-circular-dependencies": 2
+    },
+    "settings": {
+        "nejPathAliases": {
+            "pro": "fixtures/"
+        }
+    }
+}

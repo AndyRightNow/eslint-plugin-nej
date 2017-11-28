@@ -20,15 +20,8 @@ var ruleTester = new RuleTester();
 ruleTester.run("no-circular-dependencies", rule, {
 
     valid: [
-
-        // give me some code that won't trigger a warning
+        'NEJ.define([], function () {});'
+        
     ],
-
-    invalid: [{
-        code: "",
-        errors: [{
-            message: "Fill me in.",
-            type: "Me too"
-        }]
-    }]
+    invalid: []
 });
