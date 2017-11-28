@@ -1,5 +1,7 @@
 # eslint-plugin-nej
 
+[![NPM version][npm-image]][npm-url]
+
 Eslint plugin for NEJ module system.
 
 ## Installation
