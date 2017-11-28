@@ -30,6 +30,17 @@ Add `nej` to the plugins section of your `.eslintrc` configuration file. You can
 }
 ```
 
+**Required:** Add nej path alias settings
+
+```json
+{
+    "settings": {
+        "nejPathAliases": {
+            "pro": "src/javascript/"
+        }
+    }
+}
+```
 
 Then configure the rules you want to use under the rules section.
 
@@ -43,7 +54,9 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
+* [nej/no-circular-dependencies](/docs/rules/no-circular-dependencies.md): Forbids circular dependencies.
+
+
 
 
 
