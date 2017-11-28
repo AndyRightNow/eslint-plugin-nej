@@ -58,7 +58,8 @@ Then configure the rules you want to use under the rules section.
 
 * [nej/no-circular-dependencies](/docs/rules/no-circular-dependencies.md): Forbids circular dependencies.
 
-
+[npm-url]: https://npmjs.org/package/eslint-plugin-nej
+[npm-image]: https://img.shields.io/npm/v/eslint-plugin-nej.svg
 
 
 
