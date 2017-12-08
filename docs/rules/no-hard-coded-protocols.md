@@ -23,8 +23,7 @@ Examples of **correct** code for this rule:
 
 ```js
 
-var url1 = '//www.example.com';
-var protocol = window.location.protocol;
+var url1 = window.location.protocol + '//www.example.com';
 
 ```
 

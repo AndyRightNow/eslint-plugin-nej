@@ -13,11 +13,6 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-circular-dependencies": 2
-    },
-    "settings": {
-        "nejPathAliases": {
-            "pro": "fixtures/"
-        }
+        "no-hard-coded-protocols": 2
     }
 }

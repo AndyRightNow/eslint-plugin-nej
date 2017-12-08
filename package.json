@@ -11,8 +11,8 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint ./{test,lib}/**/*.js",
-    "test": "cross-env NODE_ENV=test DEBUG=no-circular-dependencies,no-circular-dependencies:* mocha tests --recursive",
-    "test:fixtures": "cross-env NODE_ENV=test DEBUG=no-circular-dependencies,no-circular-dependencies:* eslint --ignore-path ./fixtures/.eslintignore --rulesdir ./lib/rules/ ./fixtures/**/*.js",
+    "test": "cross-env NODE_ENV=test DEBUG=plugin-rules:* mocha tests --recursive",
+    "test:fixtures": "cross-env NODE_ENV=test DEBUG=plugin-rules:* eslint --ignore-path ./fixtures/.eslintignore --rulesdir ./lib/rules/ ./fixtures/**/*.js",
     "test:fixtures:prod": "cross-env NODE_ENV=production eslint --ignore-path ./fixtures/.eslintignore --rulesdir ./lib/rules/ ./../../Mooc/edu-mooc-2.0/src/javascript/**/*.js",
     "test:fixtures:bench": "cross-env NODE_ENV=bench eslint --ignore-path ./fixtures/.eslintignore --rulesdir ./lib/rules/ ./fixtures/**/*.js",
     "precommit": "npm run lint && npm run test && git add ."

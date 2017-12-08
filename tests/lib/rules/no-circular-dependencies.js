@@ -13,7 +13,7 @@ var rule = require("../../../lib/rules/no-circular-dependencies"),
     path = require('path'),
     fs = require('fs');
 
-var fixtureFolderName = 'fixtures';
+var fixtureFolderName = 'fixtures/no-circular-dependencies';
 
 RuleTester.setDefaultConfig({
     settings: {

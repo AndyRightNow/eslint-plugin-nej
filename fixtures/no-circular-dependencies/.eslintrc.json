@@ -1,0 +1,11 @@
+{
+    "extends": "./../.eslintrc.base.json",
+    "rules": {
+        "no-circular-dependencies": 2
+    },
+    "settings": {
+        "nejPathAliases": {
+            "pro": "fixtures/"
+        }
+    }
+}
