@@ -57,6 +57,7 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 * [nej/no-circular-dependencies](/docs/rules/no-circular-dependencies.md): Forbids circular dependencies.
+* [nej/no-hard-coded-protocols](/docs/rules/no-hard-coded-protocols.md): Forbids hard-coded protocols.
 
 [npm-url]: https://npmjs.org/package/eslint-plugin-nej
 [npm-image]: https://img.shields.io/npm/v/eslint-plugin-nej.svg

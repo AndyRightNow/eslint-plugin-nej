@@ -1,7 +1,8 @@
 # Forbids hard-coded protocols. (no-hard-coded-protocols)
 
-Please describe the origin of the rule here.
+For websites using HTTPS or HTTP-HTTPS compatible settings, hard-coded protocols should be avoided.
 
+This rule has an autofixer. However, it fixes "http://" or "https://" instead of "http" or "https" in order to exclude some usage as words in text.
 
 ## Rule Details
 
@@ -11,7 +12,10 @@ Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+var url1 = 'https://www.example.com';
+var url2 = 'http://www.example.com';
+var url3 = `http://www.example.com`;
+var protocol = 'http';
 
 ```
 
@@ -19,18 +23,22 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+var url1 = '//www.example.com';
+var protocol = window.location.protocol;
 
 ```
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
-
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+```js
+  "rules": {
+    "nej/no-hard-coded-protocols": ["error", {
+      /**
+       * Check against "https:" or "http:" instead of "https" or "http"
+       * 
+       * Defatul to false
+       */
+      "colon": false
+    }]
+  }
+```

@@ -37,7 +37,12 @@ NEJ.define([
 ```js
   "rules": {
     "nej/no-circular-dependencies": ["error", {
-      "ignoreNej": true // Default to true
+      /**
+       * Ignore circular dependencies in nej library
+       * 
+       * Defatul to true
+       */
+      "ignoreNej": true 
     }]
   }
 ```

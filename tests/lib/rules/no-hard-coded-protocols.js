@@ -24,6 +24,13 @@ ruleTester.run("no-hard-coded-protocols", rule, {
     }],
     invalid: [
         {
+            code: '"http"',
+            errors: [{
+                message: 'Do not use hard-coded protocols. Use window.location.protocol instead.'
+            }],
+            output: '"http"'
+        },
+        {
             code: '"http://www.example.com"',
             errors: [{
                 message: 'Do not use hard-coded protocols. Use window.location.protocol instead.'
