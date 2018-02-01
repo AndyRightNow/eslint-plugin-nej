@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nej",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An eslint plugin for NEJ module system.",
   "keywords": [
     "eslint",
